@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f3f5fc;
+}
+
+main {
+  width: 100%;
+  display: grid;
+  height: 100%;
+  grid-template-columns: 100px 55% 1fr;
+}
+
+section.logo {
+  padding: 30px;
+  text-align: center;
+}
+
+section.input,
+section.output {
+  margin: 20px;
+  padding: 20px 30px;
+}
+
+section.output {
+  border-radius: 32px;
+  box-shadow: 0 20px 40px rgba(120, 120, 120, 0.1);
+  background-color: white;
+}
+
+section.input,
+section.output div {
+  display: flex;
+  flex-direction: column;
+}
+
+section.input {
+  padding-top: 100px;
+}
+
+section.input .information {
+  color: #495057;
+  opacity: 0.8;
+  margin: 15px 0;
+  font-size: 15px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+section.output div {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+section.output div img {
+  width: 80%;
+}
+
+section.output div h2 {
+  margin: 20px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+section.output div p {
+  font-size: 18px;
+}
+
+textarea {
+  flex: 1;
+  resize: none;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  font-size: 32px;
+  outline: none;
+  color: #495057;
+  background-color: transparent;
+}
+
+section.input textarea {
+  color: #0A3871;
+}
+
+button {
+  border: 1px solid #0a3771;
+  padding: 20px 45px;
+  border-radius: 24px;
+  font-size: 20px;
+  background-color: transparent;
+  color: #0a3771;
+  width: 100%;
+}
+
+div.actions {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 250px 250px;
+}
+
+div.actions button:first-child {
+  background-color: #0a3771;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  main {
+    grid-template-rows: 100px 1fr auto;
+    grid-template-columns: auto;
+  }
+
+  section.logo {
+    text-align: left;
+  }
+
+  section.input,
+  section.output {
+    margin: 20px;
+    padding: 20px 5px;
+  }
+
+  section.output div {
+    gap: 10px;
+    padding: 10px;
+  }
+
+  section.output div h2 {
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+
+  section.output div img {
+    display: none;
+  }
+
+  div.actions {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  div.actions button {
+    padding: 20px 20px;
+  }
+}

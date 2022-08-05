@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decodificador de textos</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <main>
+    <section class="logo">
+      <img src="assets/images/logo.svg" alt="Logo do Decodificador de Textos">
+    </section>
+    
+    <section class="input">
+      <textarea
+        model="input"
+        placeholder="Digite seu texto"></textarea>
+
+      <div class="information">
+        <img src="assets/images/info.svg" alt="Ícone de informação">
+        <span>Apenas letras minúsculas e sem acento.</span>
+      </div>
+
+      <div class="actions">
+        <button id="codificar">Codificar</button>
+        <button id="decodificar">Decodificar</button>
+      </div>
+    </section>
+
+    <section class="output">
+      <div if="showOutput">
+        <textarea
+          model="output"
+          placeholder="Nenhuma mensagem"></textarea>
+        <button id="copiar">Copiar</button>
+      </div>
+      <div else>
+        <img src="assets/images/sem_texto.svg" alt="Imagem aleatoria pra mostrar que não tem textos decodificados">
+        <h2>Nenhuma mensagem encontrada</h2>
+        <p>Digite um texto que você gostaria de codificar ou decodificar.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/index.js" type="module"></script>
+</body>
+</html>
