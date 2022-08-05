@@ -35,11 +35,11 @@ const TRANSLATE = (regex, dictionary) => text =>
  * @param {string} text
  * @returns {string}
  */
-export const ENCODE = TRANSLATE(ENCODE_REGEX, DICTIONARY_ENCODE)
+export const ENCODER = TRANSLATE(ENCODE_REGEX, DICTIONARY_ENCODE)
 
 /**
  * Decodifica um texto.
  * @param {string} text
  * @returns {string}
  */
-export const DEENCODE = TRANSLATE(DECODE_REGEX, DICTIONARY_DECODE)
+export const DECODER = TRANSLATE(DECODE_REGEX, DICTIONARY_DECODE)
