@@ -1,8 +1,10 @@
 # Challenge ONE Sprint 01
 
-Build a text encoder and decoder using Javascript, HTML and CSS, to be more difficult I made a two way data binding system for textarea fields and for showing and hiding elements.
+A text encoder and decoder built using Javascript, HTML and CSS.
 
 ![](https://i.imgur.com/PtbUKXf.png)
+
+To be more difficult I made a two way data binding system for textarea fields and for showing and hiding elements.
 
 ## Live preview
 
