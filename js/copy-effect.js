@@ -1,4 +1,4 @@
-const SOUND_EFFECT = new Audio('/assets/audio/sound-effect.mp3')
+const SOUND_EFFECT = new Audio('./assets/audio/sound-effect.mp3')
 
 /**
  * Dorme por um período de tempo.
