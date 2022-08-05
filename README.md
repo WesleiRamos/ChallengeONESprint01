@@ -4,7 +4,7 @@ A text encoder and decoder built using Javascript, HTML and CSS.
 
 ![](https://i.imgur.com/PtbUKXf.png)
 
-To be more difficult I made a two way data binding system for textarea fields and for showing and hiding elements.
+To be more difficult I made a two way data binding system for textarea fields and for showing and hiding elements, works with accented characters (will be replaced by equivalent), lower and upper case letters.
 
 ## Live preview
 
