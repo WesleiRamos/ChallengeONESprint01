@@ -3,17 +3,27 @@ const DICTIONARY_ENCODE = {
   'i': 'imes',
   'a': 'ai',
   'o': 'ober',
-  'u': 'ufat'
+  'u': 'ufat',
+  'E': 'ENTER',
+  'I': 'IMES',
+  'A': 'AI',
+  'O': 'OBER',
+  'U': 'UFAT'
 }
 
-const ENCODE_REGEX = /[aeiou]/g
+const ENCODE_REGEX = /[aeiouAEIOU]/g
 
 const DICTIONARY_DECODE = {
   'enter': 'e',
   'imes': 'i',
   'ai': 'a',
   'ober': 'o',
-  'ufat': 'u'
+  'ufat': 'u',
+  'ENTER': 'E',
+  'IMES': 'I',
+  'AI': 'A',
+  'OBER': 'O',
+  'UFAT': 'U'
 }
 
 const DECODE_REGEX = new RegExp(

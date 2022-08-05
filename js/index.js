@@ -15,7 +15,7 @@ const store = createStore({
  */
 const encodeDecode = translateFn => () => {
 
-  // Remove os acentos das letras e passa pela função de "tradução".
+  // Remove os acentos das letras e passa pela função de "traduzir"
   const text = translateFn(store.input
     .get()
     .normalize('NFD')
