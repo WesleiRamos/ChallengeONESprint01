@@ -1,4 +1,5 @@
 import createStore from './store.js'
+import copyEffect from './copy-effect.js'
 import { ENCODER, DECODER } from './dictionary.js'
 
 const store = createStore({
@@ -13,7 +14,14 @@ const store = createStore({
  * @returns {() => void} Função que codifica ou decodifica um texto.
  */
 const encodeDecode = translateFn => () => {
-  const text = translateFn(store.input.get())
+
+  // Remove os acentos das letras e passa pela função de "tradução".
+  const text = translateFn(store.input
+    .get()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+  )
+
   store.output.set(text)
   store.showOutput.set(true)
 }
@@ -30,4 +38,5 @@ document
   .querySelector('#copiar')
   .addEventListener('click', () => {
     navigator.clipboard.writeText(store.output.get())
+    copyEffect()
   })
